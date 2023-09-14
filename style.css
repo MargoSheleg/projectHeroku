@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.oneBackground {
+  background-color: #3b2f63;
+  background-image: radial-gradient(
+      circle at 50% top,
+      rgba(84, 90, 182, 0.6) 0%,
+      rgba(84, 90, 182, 0) 75%
+    ),
+    radial-gradient(circle at right top, #794aa2 0%, rgba(121, 74, 162, 0) 57%);
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 1.1fr 0.7fr 0.7fr 0.7fr 0.9fr 5fr 1fr 0.7fr 0.5fr;
+  gap: 1%;
+  align-items: center;
+  padding: 1%;
+}
+
+.gridElements > a {
+  text-decoration: none;
+  color: rgba(242, 238, 255, 0.6);
+  opacity: 0.5;
+}
+
+.hasDropdown > img {
+  opacity: 0.5;
+}
+
+.dropDownGridElProducts {
+  position: absolute;
+  top: 7%;
+  display: none;
+  grid-template-rows: repeat(5, 1fr);
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.gridProd {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 8px;
+  padding-left: 6px;
+  padding-bottom: 8px;
+  display: grid;
+  grid-template-columns: 0.4fr 1.1fr 0.1fr;
+}
+
+.gridProd > img {
+  max-height: 30px;
+}
+
+.gridProd > img,
+.gridProd > p {
+  align-self: center;
+}
