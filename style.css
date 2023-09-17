@@ -16,7 +16,7 @@
 
 nav {
   display: grid;
-  grid-template-columns: 1.5fr 0.8fr 1.1fr 0.7fr 0.7fr 0.7fr 0.9fr 5fr 1fr 0.7fr 0.5fr;
+  grid-template-columns: 1.5fr 0.8fr 1.1fr 0.7fr 0.7fr 0.7fr 0.9fr 5fr 1fr 0.7fr 0.9fr;
   gap: 1%;
   align-items: center;
   padding: 1%;
@@ -61,4 +61,97 @@ nav {
 .gridProd > img,
 .gridProd > p {
   align-self: center;
+}
+
+.dropDownGridElMarketplace {
+  position: absolute;
+  top: 7%;
+  display: none;
+  grid-template-rows: repeat(4, 1fr);
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.gridMarket {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 8px;
+  padding-left: 6px;
+  padding-bottom: 8px;
+  display: grid;
+  grid-template-columns: 0.4fr 1.2fr;
+}
+
+.gridMarket > a {
+  text-decoration: none;
+}
+
+.gridMarket > img,
+.gridMarket > p {
+  align-self: center;
+  justify-self: center;
+}
+
+.gridMarket > img {
+  max-height: 30px;
+}
+
+.iconHButtons {
+  height: 35vh;
+  text-align: center;
+  padding-top: 3%;
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+input {
+  cursor: text;
+  height: 4vh;
+  border-radius: 4px;
+  border: 1px transparent solid;
+  background: rgba(255, 255, 255, 0.1);
+  background-image: url(media/searchIcon.png);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* .input::before {
+  content: "Search Elements";
+  position: relative;
+  top: 24px;
+  left: 9px;
+  color: white;
+  font-weight: 300;
+} */
+
+label {
+  position: relative;
+  top: 24px;
+  left: 9px;
+  color: white;
+  font-weight: 300;
+  display: inline;
+}
+
+.gridElements > button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.gridElements > button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
