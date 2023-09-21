@@ -124,15 +124,6 @@ input {
   background-position: right center;
 }
 
-/* .input::before {
-  content: "Search Elements";
-  position: relative;
-  top: 24px;
-  left: 9px;
-  color: white;
-  font-weight: 300;
-} */
-
 label {
   position: relative;
   top: 24px;
