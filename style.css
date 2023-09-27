@@ -146,3 +146,44 @@ label {
 .gridElements > button:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+.threeStripes {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .gridElements.media {
+    display: none;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .oneBackground {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .iconHButtons {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+  }
+
+  .threeStripes {
+    display: block;
+  }
+
+  .threeStripes > img {
+    height: 40px;
+  }
+}
